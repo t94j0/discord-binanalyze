@@ -1,0 +1,4 @@
+discord.py
+discord
+discordrouter
+r2pipe
