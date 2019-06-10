@@ -39,9 +39,9 @@ class ELF(discord.Client):
     async def write_attachment(self, _id: str) -> str:
         _file = self.attachments[_id]
         filename = f'/tmp/{_file.filename}'
-        fd = open(filename, 'wb+')
-        await _file.save(fd)
-        return filename
+        with open(filename, 'wb+') as fd:
+            await _file.save(fd)
+            return filename
 
     async def r2_cmd(self, _id: str, cmd: str) -> str:
         r2 = await self.create_r2pipe(_id)

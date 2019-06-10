@@ -51,6 +51,19 @@ Example:
 
 `!elf gadgets test pop rdi` will list all rop gadgets with `pop rdi`
 
+### Strings
+
+In a similar way of searching for ROP gadgets, you can search for strings
+
+`!elf gadgets <id>` - List all strings and output to text format
+
+`!elf gadgets <id> <filter>` - List strings that contain '<filter>'
+
+Example:
+
+`!elf gadgets test pop rdi` will list all rop gadgets with `pop rdi`
+
+
 ## Warnings
 
 * Radare2 command injection
