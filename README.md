@@ -7,10 +7,20 @@ Read binaries from Discord and perform static analysis on it. This project uses 
 1. Clone this repository
 2. `pip3 install -r ./requirements.txt`
 3. [Create a bot account][create bot]
-4. Set TOKEN variable in `main.py`
-5. [List bot-accessable channels][list channels]
-6. Set TARGET_CHANNEL for what channel you want the bot to live on
-7. Set BOT_NAME to whatever you'd like. I named mine `elf`
+4. Create file `~/.config/binanalyze` like below
+5. Set `token` variable in `~/.config/binanalyze`
+6. [List bot-accessable channels][list channels]
+7. Set `target_channel` for what channel you want the bot to live on
+8. Set `bot_name` to whatever you'd like. I named mine `elf`
+
+
+~/.config/binanalyze
+```
+[DEFAULT]
+bot_name = elf
+token = my_token
+target_channel = 1234
+```
 
 ## Usage
 
